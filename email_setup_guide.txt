@@ -1,0 +1,43 @@
+EMAIL SETUP GUIDE FOR MOTHERCARE SYSTEM
+========================================
+
+OPTION 1: XAMPP Mercury Mail (Local Testing)
+--------------------------------------------
+1. Download Mercury Mail: https://www.pmail.com/downloads_mercury_main.htm
+2. Install Mercury Mail
+3. Configure XAMPP to use Mercury:
+   - Open C:\xampp\php\php.ini
+   - Find [mail function] section
+   - Set: SMTP = localhost
+   - Set: smtp_port = 25
+   - Set: sendmail_from = noreply@maternalcare.local
+4. Start Mercury Mail service
+5. Restart Apache in XAMPP
+
+OPTION 2: Gmail SMTP (Production Ready)
+--------------------------------------
+1. Create Gmail App Password:
+   - Go to Google Account settings
+   - Enable 2-factor authentication
+   - Generate App Password for "Mail"
+
+2. Install PHPMailer:
+   - Download: https://github.com/PHPMailer/PHPMailer/releases
+   - Extract to: C:\xampp\htdocs\mothercaresystem\vendors\phpmailer\
+
+3. Use the enhanced email script (see enhanced_forgot_password.php)
+
+OPTION 3: Mailhog (Development Testing)
+--------------------------------------
+1. Download Mailhog: https://github.com/mailhog/MailHog/releases
+2. Run mailhog.exe
+3. Configure php.ini:
+   - SMTP = localhost
+   - smtp_port = 1025
+4. View emails at: http://localhost:8025
+
+CURRENT SETUP
+-------------
+The system is configured to use PHP's built-in mail() function.
+For local testing, use Mercury Mail or Mailhog.
+For production, use Gmail SMTP or your hosting provider's SMTP.

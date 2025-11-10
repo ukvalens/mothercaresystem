@@ -1,0 +1,34 @@
+# Configuration files with sensitive data
+app/config/email_config.php
+app/config/sms_config.php
+app/config/database.php
+
+# Email logs
+app/config/email_log.txt
+
+# Test files
+test_*.php
+debug_*.php
+check_*.php
+generate_token.php
+
+# Vendor directories (can be regenerated)
+vendor/
+PHPMailer-7.0.0/
+PHPMailer-7.0.0.zip
+PHPMailer-7.0.0.tar.gz
+
+# Environment files
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
