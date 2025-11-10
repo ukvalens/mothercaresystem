@@ -13,7 +13,8 @@ COPY . .
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer install --no-dev --optimize-autoloader
 
-RUN chown -R www-data:www-data /var/www/html \
+RUN mkdir -p /var/www/html/public/uploads /var/www/html/storage \
+    && chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html \
     && chmod -R 777 /var/www/html/public/uploads \
     && chmod -R 777 /var/www/html/storage
