@@ -1,0 +1,14 @@
+# Simple .htaccess for basic functionality
+RewriteEngine On
+
+# Redirect root to public folder
+DirectoryIndex public/index.html
+
+# Basic security
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+<Files "*.log">
+    Require all denied
+</Files>

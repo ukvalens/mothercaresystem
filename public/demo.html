@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Demo - Maternal Care System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; text-align: center; border-radius: 10px; margin-bottom: 2rem; }
+        .demo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .demo-card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .demo-card h3 { color: #667eea; margin-bottom: 1rem; }
+        .btn { display: inline-block; padding: 10px 20px; background: #28a745; color: white; text-decoration: none; border-radius: 5px; margin: 5px; }
+        .btn:hover { background: #218838; }
+        .btn-primary { background: #007bff; }
+        .btn-primary:hover { background: #0056b3; }
+        .feature-list { list-style: none; }
+        .feature-list li { padding: 0.5rem 0; border-bottom: 1px solid #eee; }
+        .feature-list li:before { content: "✅ "; color: #28a745; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Maternal Care System Demo</h1>
+            <p>Explore the comprehensive healthcare management system</p>
+        </div>
+
+        <div class="demo-grid">
+            <div class="demo-card">
+                <h3>👨‍⚕️ Healthcare Provider Access</h3>
+                <ul class="feature-list">
+                    <li>Doctor Dashboard</li>
+                    <li>Nurse Portal</li>
+                    <li>Admin Panel</li>
+                    <li>Receptionist Interface</li>
+                </ul>
+                <a href="../app/views/auth/login.php" class="btn btn-primary">Access Provider Portal</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>👩‍🦰 Patient Portal</h3>
+                <ul class="feature-list">
+                    <li>Book Appointments</li>
+                    <li>View Medical Records</li>
+                    <li>Pregnancy Tracking</li>
+                    <li>Payment History</li>
+                </ul>
+                <a href="../app/views/auth/login.php" class="btn">Patient Login</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>📊 System Features</h3>
+                <ul class="feature-list">
+                    <li>AI Risk Assessment</li>
+                    <li>Real-time Notifications</li>
+                    <li>SMS Integration</li>
+                    <li>Comprehensive Reporting</li>
+                </ul>
+                <a href="../app/views/dashboard/index.php" class="btn">View Dashboard</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>🔐 Demo Credentials</h3>
+                <div style="background: #f8f9fa; padding: 1rem; border-radius: 5px; margin: 1rem 0;">
+                    <strong>Admin:</strong><br>
+                    Email: admin@maternalcare.rw<br>
+                    Password: admin123<br><br>
+                    
+                    <strong>Doctor:</strong><br>
+                    Email: doctor@maternalcare.rw<br>
+                    Password: doctor123<br><br>
+                    
+                    <strong>Patient:</strong><br>
+                    Create account or use existing
+                </div>
+                <a href="../app/views/auth/signup.php" class="btn">Create Account</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>🚀 Quick Start</h3>
+                <ol style="padding-left: 1.5rem;">
+                    <li>Choose your role (Admin/Doctor/Nurse/Patient)</li>
+                    <li>Login with demo credentials</li>
+                    <li>Explore the dashboard features</li>
+                    <li>Test appointment booking</li>
+                    <li>Try the notification system</li>
+                </ol>
+                <a href="../app/views/auth/login.php" class="btn btn-primary">Start Demo</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>📱 Mobile Responsive</h3>
+                <p>The system is fully responsive and works seamlessly on:</p>
+                <ul class="feature-list">
+                    <li>Desktop computers</li>
+                    <li>Tablets</li>
+                    <li>Mobile phones</li>
+                    <li>All modern browsers</li>
+                </ul>
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 10px;">
+            <h2 style="color: #667eea; margin-bottom: 1rem;">Ready to Deploy?</h2>
+            <p style="margin-bottom: 2rem;">The system is production-ready with comprehensive security and features.</p>
+            <a href="https://github.com/ukvalens/mothercaresystem" class="btn btn-primary">View on GitHub</a>
+            <a href="../deploy.md" class="btn">Deployment Guide</a>
+        </div>
+    </div>
+</body>
+</html>

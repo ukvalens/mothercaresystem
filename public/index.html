@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maternal Care System - Comprehensive Healthcare Management</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+        
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: white; text-decoration: none; transition: opacity 0.3s; }
+        .nav-links a:hover { opacity: 0.8; }
+        
+        .hero { background: linear-gradient(rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f8ff" width="1200" height="600"/></svg>'); height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+        .hero-content h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero-content p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; }
+        .btn { display: inline-block; padding: 12px 30px; background: #28a745; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s; margin: 0 10px; }
+        .btn:hover { background: #218838; }
+        .btn-secondary { background: transparent; border: 2px solid white; }
+        .btn-secondary:hover { background: white; color: #667eea; }
+        
+        .section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; }
+        .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .feature h3 { color: #667eea; margin-bottom: 1rem; }
+        
+        .stats { background: #f8f9fa; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; }
+        .stat { background: white; padding: 2rem; border-radius: 10px; }
+        .stat-number { font-size: 2.5rem; font-weight: bold; color: #667eea; }
+        
+        .footer { background: #333; color: white; padding: 2rem; text-align: center; }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">🏥 Maternal Care System</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../app/views/auth/login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Comprehensive Maternal Healthcare Management</h1>
+            <p>Advanced healthcare system designed for maternal and child health services with AI-powered risk assessment, comprehensive notifications, and role-based access control.</p>
+            <a href="../app/views/auth/login.php" class="btn">Access System</a>
+            <a href="#features" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <h2 style="text-align: center; margin-bottom: 3rem; color: #667eea; font-size: 2.5rem;">System Features</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">👥</div>
+                <h3>Patient Management</h3>
+                <p>Complete patient registration, medical history tracking, and comprehensive record management system.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <h3>Appointment System</h3>
+                <p>Advanced scheduling with real-time notifications, confirmations, and automated reminders.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🤱</div>
+                <h3>Pregnancy Care</h3>
+                <p>AI-powered risk assessment, ANC visit tracking, and comprehensive pregnancy management.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔔</div>
+                <h3>Smart Notifications</h3>
+                <p>Real-time alerts, email notifications, SMS integration, and role-based targeting.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💳</div>
+                <h3>Payment Management</h3>
+                <p>Multiple payment methods, mobile money integration, and automated billing system.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🤖</div>
+                <h3>AI-Powered Analytics</h3>
+                <p>Predictive risk scoring, clinical alerts, and automated health monitoring.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section stats">
+        <h2 style="text-align: center; margin-bottom: 3rem; color: #667eea; font-size: 2.5rem;">System Capabilities</h2>
+        <div class="stats-grid">
+            <div class="stat">
+                <div class="stat-number">5</div>
+                <p>User Roles</p>
+            </div>
+            <div class="stat">
+                <div class="stat-number">15+</div>
+                <p>Core Features</p>
+            </div>
+            <div class="stat">
+                <div class="stat-number">24/7</div>
+                <p>System Availability</p>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <p>Secure & Compliant</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: #667eea; font-size: 2.5rem;">About the System</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                The Maternal Care System is a comprehensive healthcare management platform specifically designed for maternal and child health services. 
+                Built with modern web technologies and featuring AI-powered risk assessment, our system provides healthcare providers with the tools 
+                they need to deliver exceptional care.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div>
+                    <h4 style="color: #667eea; margin-bottom: 1rem;">🏥 Healthcare Providers</h4>
+                    <p>Streamlined workflows for doctors, nurses, and administrative staff with role-based access control.</p>
+                </div>
+                <div>
+                    <h4 style="color: #667eea; margin-bottom: 1rem;">👩‍⚕️ Patient Care</h4>
+                    <p>Comprehensive patient portals with appointment booking, medical records, and real-time notifications.</p>
+                </div>
+                <div>
+                    <h4 style="color: #667eea; margin-bottom: 1rem;">📊 Analytics & Reporting</h4>
+                    <p>Advanced reporting, AI-powered insights, and predictive analytics for better healthcare outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background: #f8f9fa;">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: #667eea; font-size: 2.5rem;">Get Started</h2>
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <p style="margin-bottom: 2rem; font-size: 1.1rem;">
+                Ready to transform your healthcare management? Access the system with your credentials or contact us for setup assistance.
+            </p>
+            <div style="margin-bottom: 2rem;">
+                <a href="../app/views/auth/login.php" class="btn">Login to System</a>
+                <a href="../app/views/auth/signup.php" class="btn btn-secondary" style="color: #667eea; border-color: #667eea;">Create Account</a>
+            </div>
+            <div style="background: white; padding: 2rem; border-radius: 10px; margin-top: 2rem;">
+                <h4 style="color: #667eea; margin-bottom: 1rem;">Default Login Credentials</h4>
+                <div style="text-align: left; display: inline-block;">
+                    <p><strong>Admin:</strong> admin@maternalcare.rw / admin123</p>
+                    <p><strong>Doctor:</strong> doctor@maternalcare.rw / doctor123</p>
+                    <p><strong>Nurse:</strong> nurse@maternalcare.rw / nurse123</p>
+                    <p><strong>Receptionist:</strong> receptionist@maternalcare.rw / receptionist123</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Maternal Care System. All rights reserved.</p>
+        <p>📧 ukwitegetsev9@gmail.com | 🌐 GitHub: ukvalens/mothercaresystem</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(102, 126, 234, 0.95)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            }
+        });
+    </script>
+</body>
+</html>
